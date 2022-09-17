@@ -4,109 +4,135 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>
       [Bluemin]프론트엔드 취준생 일상
-      Vlogㅣ일상/취준/개발/프론트엔드/비전공자개발/클론코딩
+      Vlogㅣ일상/취준/개발/프론트엔드/비전공자개발/클론코딩/html/css/javascript/반응형웹/유튜브클론코딩/Reactive-web
     </title>
   </head>
   <body>
     <header>
-      <div class="header_logo">
-        <a href="http://youtube.com"><!--youtube icon--></a>
+      <div class="header__logo">
+        <a href="http://youtube.com">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
         <a href="http://youtube.com">Youtube</a>
       </div>
-      <div class="header_art-btn">
-        <a href="#"><!--search icon--></a>
-        <a href="#"><!--art-bar icon--></a>
+      <div class="header__art-btn">
+        <a href="#"><i class="fas fa-search"></i></a>
+        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
       </div>
     </header>
 
-    <video autoplay controls class="video--main">
+    <video autoplay controls width="100%" class="video--main">
       동영상 재생하는데 오류가 발생했습니다.
       <a href="">문제를 신고해주세요.</a>
     </video>
 
-    <div class="hash-tags">
-      <a href="#" class="hash-tag">#프론트엔드</a>
-      <a href="#" class="hash-tag">#개발자취준</a>
-      <a href="#" class="hash-tag">#취준생브이로그</a>
-    </div>
+    <main>
+      <div class="video-main">
+        <div class="video-main__hash-tags">
+          <a href="#" class="video-main__hash-tag">#프론트엔드</a>
+          <a href="#" class="video-main__hash-tag">#개발자취준</a>
+          <a href="#" class="video-main__hash-tag">#취준생브이로그</a>
+        </div>
 
-    <div class="video--main__title">
-      <p>
-        [Bluemin]프론트엔드 취준생 일상
-        Vlogㅣ일상/취준/개발/프론트엔드/비전공자개발/클론코딩
-      </p>
-    </div>
+        <div class="video-main__title">
+          <p>
+            [Bluemin]프론트엔드 취준생 일상
+            Vlogㅣ일상/취준/개발/프론트엔드/비전공자개발/클론코딩/html/css/javascript/반응형웹/유튜브클론코딩/Reactive-web
+          </p>
+          <i class="fas fa-caret-down"></i>
+        </div>
 
-    <div class="video--main_data">
-      <span>조회수 123,456회</span>
-      <span> ・ </span>
-      <span>2022.09.18</span>
-    </div>
+        <div class="video-main__data">
+          <span>조회수 123,456회</span>
+          <span> ・ </span>
+          <span>2022.09.18</span>
+        </div>
 
-    <div class="main-buttons">
-      <div class="main-_button--like">
-        <!--좋아요 아이콘-->
-        <span>1천</span>
-      </div>
-      <div class="main-button--hate">
-        <!--싫어요 아이콘-->
-        <span>싫어요</span>
-      </div>
-      <div class="main-button--share">
-        <!--공유 아이콘-->
-        <span>공유</span>
-      </div>
-      <div class="main-button--save">
-        <!--저장 아이콘-->
-        <span>저장</span>
-      </div>
-      <div class="main-button--report">
-        <!--신고 아이콘-->
-        <span>신고 </span>
-      </div>
-    </div>
-
-    <div class="post-youtuber__data">
-      <img src="" />
-      <div class="post-youtuber_info">
-        <span>Bluemin</span>
-        <span>구독자 134.4만명</span>
-      </div>
-      <button>구독</button>
-    </div>
-
-    <aside class="side-playlist-bar">
-      <button>관련 콘텐츠</button>
-      <div class="side-playlist">
-        <div class="side-playlist__contents">
-          <video class="side-playlis__video"></video>
-          <div class="side-playlist__data">
-            <p class="side-playlist__title">제목1</p>
-            <span class="side-playlist__user-name">Bluemin</span>
-            <span class="side-playlist__veiw-count">조회수</span>
+        <div class="video-main-buttons">
+          <div class="video-main-button__like">
+            <i class="fas fa-thumbs-up"></i>
+            <span>1천</span>
+          </div>
+          <div class="video-main-button__hate">
+            <i class="fas fa-thumbs-down"></i>
+            <span>싫어요</span>
+          </div>
+          <div class="video-main-button__share">
+            <i class="fas fa-share"></i>
+            <span>공유</span>
+          </div>
+          <div class="video-main-button__save">
+            <i class="fas fa-plus"></i>
+            <span>저장</span>
+          </div>
+          <div class="video-main-button__report">
+            <i class="fas fa-flag"></i>
+            <span>신고 </span>
           </div>
         </div>
 
-        <div class="side-playlist__contents">
-          <video class="side-playlis__video"></video>
-          <div class="side-playlist__data">
-            <p class="side-playlist__title">제목2</p>
-            <span class="side-playlist__user-name">Bluemin</span>
-            <span class="side-playlist__veiw-count">조회수</span>
+        <div class="post-youtuber__data">
+          <div class="post-youtuber__info">
+            <img src="img/user.png" />
+            <div class="post-youtuber__info__data">
+              <span class="post-youtuber__info__user-name">Bluemin</span>
+              <span class="post-youtuber__info__subscriber-count"
+                >구독자 134.4만명</span
+              >
+            </div>
           </div>
-        </div>
-
-        <div class="side-playlist__contents">
-          <video class="side-playlis__video"></video>
-          <div class="side-playlist__data">
-            <p class="side-playlist__title">제목3</p>
-            <span class="side-playlist__user-name">Bluemin</span>
-            <span class="side-playlist__veiw-count">조회수</span>
-          </div>
+          <div class="subcribe-btn">구독</div>
         </div>
       </div>
-    </aside>
+
+      <aside class="side-playlist-bar">
+        <span class="side-playlist-bar__title">관련 콘텐츠</span>
+        <div class="side-playlist">
+          <div class="side-playlist__contents">
+            <video width="25%" class="side-playlis__video"></video>
+            <div class="side-playlist__data">
+              <p class="side-playlist__title">
+                제목1 최대한 길게 브이로그 웅앵 개발자 되고 싶어요 열심히
+                하겠습니다 난 할 수 있다 천재만재 할 수 있다 아자아자 화이팅~~~~
+              </p>
+              <div class="side-playlist__user-name">Bluemin</div>
+              <div class="side-playlist__veiw-count">조회수</div>
+            </div>
+          </div>
+
+          <div class="side-playlist__contents">
+            <video width="25%" class="side-playlis__video"></video>
+            <div class="side-playlist__data">
+              <p class="side-playlist__title">
+                제목2 최대한 길게 브이로그 웅앵 개발자 되고 싶어요 열심히
+                하겠습니다 난 할 수 있다 천재만재 할 수 있다 아자아자 화이팅~~~~
+              </p>
+              <div class="side-playlist__user-name">Bluemin</div>
+              <div class="side-playlist__veiw-count">조회수</div>
+            </div>
+          </div>
+
+          <div class="side-playlist__contents">
+            <video width="25%" class="side-playlis__video"></video>
+            <div class="side-playlist__data">
+              <p class="side-playlist__title">
+                제목3 최대한 길게 브이로그 웅앵 개발자 되고 싶어요 열심히
+                하겠습니다 난 할 수 있다 천재만재 할 수 있다 아자아자 화이팅~~~~
+              </p>
+              <div class="side-playlist__user-name">Bluemin</div>
+              <div class="side-playlist__veiw-count">조회수</div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <script
+      src="https://kit.fontawesome.com/80f32340dd.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
