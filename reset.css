@@ -127,3 +127,16 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+/* add */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+button:focus {
+  border: none;
+  cursor: pointer;
+  outline: none;
+}

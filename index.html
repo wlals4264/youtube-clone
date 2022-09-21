@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>
       [Bluemin]프론트엔드 취준생 일상
@@ -13,13 +19,13 @@
   <body>
     <!-- header -->
     <header>
-      <div class="header__logo">
+      <div class="logo">
         <a href="http://youtube.com">
           <i class="fa-brands fa-youtube"></i>
         </a>
         <a href="http://youtube.com">Youtube</a>
       </div>
-      <div class="header__art-btn">
+      <div class="icons">
         <a href="#"><i class="fas fa-search"></i></a>
         <a href="#"><i class="fas fa-ellipsis-v"></i></a>
       </div>
@@ -33,123 +39,128 @@
       </video>
     </section>
 
-    <!-- Video Info -->
-    <section class="info">
-      <!-- Metadata -->
-      <div class="metadata">
-        <ul class="hash-tags">
-          <a href="#"><li>#프론트엔드</li></a>
-          <a href="#"><li>#개발자취준</li></a>
-          <a href="#"><li>#취준생브이로그</li></a>
-        </ul>
-        <div class="titleAhdButton">
-          <span class="title">
-            [Bluemin]프론트엔드 취준생 일상
-            Vlogㅣ일상/취준/개발/프론트엔드/비전공자개발/클론코딩/html/css/javascript/반응형웹/유튜브클론코딩/Reactive-web
-          </span>
-          <button class="moreBtn">
-            <i class="fas fa-caret-down"></i>
-          </button>
-        </div>
-        <div class="views">
-          <span>조회수 123,456회</span>
-          <span> ・ </span>
-          <span>2022.09.18</span>
-        </div>
-      </div>
-      <!-- Actions -->
-      <ul class="action">
-        <li>
-          <button>
-            <i class="fas fa-thumbs-up"></i>
-            <span>1천</span>
-          </button>
-        </li>
-        <li>
-          <button>
-            <i class="fas fa-thumbs-down"></i>
-            <span>싫어요</span>
-          </button>
-        </li>
-        <li>
-          <button>
-            <i class="fas fa-share"></i>
-            <span>공유</span>
-          </button>
-        </li>
-        <li>
-          <button>
-            <i class="fas fa-plus"></i>
-            <span>저장</span>
-          </button>
-        </li>
-        <li>
-          <button>
-            <i class="fas fa-flag"></i>
-            <span>신고 </span>
-          </button>
-        </li>
-      </ul>
-      <!-- Channel Description -->
-      <div class="channel">
+    <div class="infoAndUpNext">
+      <!-- Video Info -->
+      <section class="info">
+        <!-- Metadata -->
         <div class="metadata">
-          <img src="img/user.png" />
-          <div class="info">
-            <span class="user-name">Bluemin</span>
-            <span class="subscribers">구독자 134.4만명</span>
+          <ul class="hash-tags">
+            <a href="#"><li>#프론트엔드</li></a>
+            <a href="#"><li>#개발자취준</li></a>
+            <a href="#"><li>#취준생브이로그</li></a>
+          </ul>
+          <div class="titleAndButton">
+            <span class="title clamp">
+              [Bluemin]프론트엔드 취준생 일상
+              Vlogㅣ일상/취준/개발/프론트엔드/비전공자개발/클론코딩/html/css/javascript/반응형웹/유튜브클론코딩/Reactive-web/front-end
+              developer
+            </span>
+            <button class="moreBtn clicked">
+              <i class="fas fa-caret-down"></i>
+            </button>
+          </div>
+          <div class="views">
+            <span>조회수 123,456회</span>
+            <span> ・ </span>
+            <span>2022.09.18</span>
           </div>
         </div>
-        <button class="subscribe">구독</button>
-      </div>
-    </section>
-    <!-- upNext list -->
-    <section class="upNext">
-      <span class="title">관련 콘텐츠</span>
-      <ul>
-        <li class="item">
-          <img src="" alt="" />
-          <div class="info">
-            <span class="title">
-              제목1 최대한 길게 브이로그 웅앵 개발자 되고 싶어요 열심히
-              하겠습니다 난 할 수 있다 천재만재 할 수 있다 아자아자 화이팅~~~~
-            </span>
-            <div class="user-name">Bluemin</div>
-            <div class="veiws">조회수</div>
+        <!-- Actions -->
+        <ul class="action">
+          <li>
+            <button>
+              <i class="active fas fa-thumbs-up"></i>
+              <span>1천</span>
+            </button>
+          </li>
+          <li>
+            <button>
+              <i class="fas fa-thumbs-down"></i>
+              <span>싫어요</span>
+            </button>
+          </li>
+          <li>
+            <button>
+              <i class="fas fa-share"></i>
+              <span>공유</span>
+            </button>
+          </li>
+          <li>
+            <button>
+              <i class="fas fa-plus"></i>
+              <span>저장</span>
+            </button>
+          </li>
+          <li>
+            <button>
+              <i class="fas fa-flag"></i>
+              <span>신고 </span>
+            </button>
+          </li>
+        </ul>
+        <!-- Channel Description -->
+        <div class="channel">
+          <div class="metadata">
+            <img src="img/user.png" />
+            <div class="info">
+              <span class="user-name">Bluemin</span>
+              <span class="subscribers">구독자 134.4만명</span>
+            </div>
+          </div>
+          <button class="subscribe">구독</button>
+        </div>
+      </section>
+      <!-- upNext list -->
+      <section class="upNext">
+        <span class="title">관련 콘텐츠</span>
+        <ul>
+          <li class="item">
+            <div class="img"><img src="" alt="" /></div>
+            <div class="info">
+              <span class="title">
+                제목1 최대한 길게 브이로그 웅앵 개발자 되고 싶어요 열심히
+                하겠습니다 난 할 수 있다 천재만재 할 수 있다 아자아자 화이팅~~~~
+              </span>
+              <div class="user-name">Bluemin</div>
+              <div class="views">조회수</div>
+            </div>
             <button class="moreBtn">
               <i class="fas fa-ellipsis-v"></i>
             </button>
-          </div>
-        </li>
-        <li class="item">
-          <img src="" alt="" />
-          <div class="info">
-            <span class="title">
-              제목2 최대한 길게 브이로그 웅앵 개발자 되고 싶어요 열심히
-              하겠습니다 난 할 수 있다 천재만재 할 수 있다 아자아자 화이팅~~~~
-            </span>
-            <div class="user-name">Bluemin</div>
-            <div class="veiws">조회수</div>
+          </li>
+          <li class="item">
+            <div class="img"><img src="" alt="" /></div>
+            <div class="info">
+              <span class="title">
+                제목1 최대한 길게 브이로그 웅앵 개발자 되고 싶어요 열심히
+                하겠습니다 난 할 수 있다 천재만재 할 수 있다 아자아자 화이팅~~~~
+              </span>
+              <div class="user-name">Bluemin</div>
+              <div class="views">조회수</div>
+            </div>
             <button class="moreBtn">
               <i class="fas fa-ellipsis-v"></i>
             </button>
-          </div>
-        </li>
-        <li class="item">
-          <img src="" alt="" />
-          <div class="info">
-            <span class="title">
-              제목3 최대한 길게 브이로그 웅앵 개발자 되고 싶어요 열심히
-              하겠습니다 난 할 수 있다 천재만재 할 수 있다 아자아자 화이팅~~~~
-            </span>
-            <div class="user-name">Bluemin</div>
-            <div class="veiws">조회수</div>
+          </li>
+          <li class="item">
+            <div class="img"><img src="" alt="" /></div>
+            <div class="info">
+              <span class="title">
+                제목1 최대한 길게 브이로그 웅앵 개발자 되고 싶어요 열심히
+                하겠습니다 난 할 수 있다 천재만재 할 수 있다 아자아자 화이팅~~~~
+              </span>
+              <div class="user-name">Bluemin</div>
+              <div class="views">조회수</div>
+            </div>
             <button class="moreBtn">
               <i class="fas fa-ellipsis-v"></i>
             </button>
-          </div>
-        </li>
-      </ul>
-    </section>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <script src="main.js" defer></script>
 
     <script
       src="https://kit.fontawesome.com/80f32340dd.js"
